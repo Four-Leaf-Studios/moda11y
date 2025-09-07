@@ -16,7 +16,9 @@
     "play": "vite --config playground/vite.config.ts",
     "play:build": "vite build --config playground/vite.config.ts",
     "play:preview": "vite preview --config playground/vite.config.ts",
-    "release:tag": "node scripts/tag-version.mjs"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ci": "vitest run --coverage"
   },
   "exports": {
     ".": {
@@ -68,5 +70,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
   }
 }
