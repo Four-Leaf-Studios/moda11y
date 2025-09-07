@@ -16,9 +16,7 @@
     "play": "vite --config playground/vite.config.ts",
     "play:build": "vite build --config playground/vite.config.ts",
     "play:preview": "vite preview --config playground/vite.config.ts",
-    "release:patch": "npm version patch -m \"release: %s\" && git push --follow-tags",
-    "release:minor": "npm version minor -m \"release: %s\" && git push --follow-tags",
-    "release:major": "npm version major -m \"release: %s\" && git push --follow-tags"
+    "release:tag": "node scripts/tag-version.mjs"
   },
   "exports": {
     ".": {
