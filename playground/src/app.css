@@ -1,0 +1,52 @@
+@import "@four-leaf-studios/moda11y/styles.css";
+
+:root {
+  color-scheme: light dark;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter,
+    "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: color-mix(in oklab, Canvas, CanvasText 2%);
+}
+
+.container {
+  width: min(920px, 92vw);
+  margin: 5rem auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem;
+}
+p {
+  opacity: 0.7;
+  margin: 0 0 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+button {
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, CanvasText, Canvas 70%);
+  background: color-mix(in oklab, Canvas, CanvasText 6%);
+  color: CanvasText;
+  cursor: pointer;
+}
+button:hover {
+  background: color-mix(in oklab, Canvas, CanvasText 10%);
+}
+button.primary {
+  background: color-mix(in oklab, royalblue, Canvas 75%);
+  color: white;
+  border-color: color-mix(in oklab, royalblue, Canvas 60%);
+}

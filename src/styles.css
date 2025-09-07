@@ -1,0 +1,38 @@
+/* sensible defaults; headless by design */
+[data-mod11y="dialog"] {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: color-mix(in oklab, black, transparent 60%);
+  z-index: 1000;
+}
+[data-mod11y="dialog"][hidden] {
+  display: none !important;
+}
+
+.m11y__surface {
+  background: Canvas;
+  color: CanvasText;
+  border-radius: 12px;
+  padding: 1rem;
+  min-inline-size: 320px;
+  max-inline-size: min(90vw, 720px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-mod11y="dialog"]:not([hidden]) .m11y__surface {
+    animation: m11yIn 0.2s ease-out both;
+  }
+  @keyframes m11yIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "moduleResolution": "bundler",
+    "strict": true,
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["vite/client", "node", "react", "react-dom"],
+
+    "baseUrl": ".",
+    "paths": {
+      "@four-leaf-studios/moda11y": ["../src/index.ts"],
+      "@four-leaf-studios/moda11y/react": ["../src/react/index.tsx"],
+      "@four-leaf-studios/moda11y/modules": ["../src/modules/index.ts"],
+      "@four-leaf-studios/moda11y/modules/*": ["../src/modules/*"],
+      "@four-leaf-studios/moda11y/styles.css": ["../src/styles.css"]
+    }
+  },
+  "include": ["src"]
+}
