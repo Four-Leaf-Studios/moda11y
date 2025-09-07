@@ -1,6 +1,6 @@
 {
   "name": "@four-leaf-studios/moda11y",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tiny, framework-agnostic, fully accessible modal dialogs (TS, a11y-first)",
   "license": "MIT",
   "type": "module",
