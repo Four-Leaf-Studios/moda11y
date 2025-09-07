@@ -1,6 +1,14 @@
 {
   "name": "@four-leaf-studios/moda11y",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Four-Leaf-Studios/moda11y"
+  },
+  "bugs": {
+    "url": "https://github.com/Four-Leaf-Studios/moda11y/issues"
+  },
+  "homepage": "https://github.com/Four-Leaf-Studios/moda11y#readme",
   "description": "Tiny, framework-agnostic, fully accessible modal dialogs (TS, a11y-first)",
   "license": "MIT",
   "type": "module",
