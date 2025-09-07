@@ -15,7 +15,8 @@
     "clean": "rimraf dist",
     "play": "vite --config playground/vite.config.ts",
     "play:build": "vite build --config playground/vite.config.ts",
-    "play:preview": "vite preview --config playground/vite.config.ts"
+    "play:preview": "vite preview --config playground/vite.config.ts",
+    "release:tag": "node -e \"const v=require('./package.json').version; console.log('Tagging v'+v)\" && git tag v$(node -p \"require('./package.json').version\") && git push origin v$(node -p \"require('./package.json').version\")"
   },
   "exports": {
     ".": {
